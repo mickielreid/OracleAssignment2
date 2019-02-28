@@ -1,7 +1,7 @@
-#Oracle Assignment 2
-Question 1
+# Oracle Assignment 2
+**Question 1**
 
-CREATE TABLE called supplier  with the following fields . 
+*CREATE TABLE called supplier  with the following fields . 
 supplier_id numeric(10)  - > Primary key with constraint name 
 supplier_name varchar2(50) - >unique name 
 contact_name varchar2(50)
@@ -14,7 +14,7 @@ Region –> should accept only  ('N', 'NW', 'NE', 'S', 'SE', 'SW', 'W', 'E')
 3.	Add phone number in the supplier table using DDL command
 4.	Delete the unused column in the supplier table 
 5.	Write a sql command to delete supplier table. 
-6.	Create a view named supplier_contact . Include supplier_id,supplier_name,phone_no  
+6.	Create a view named supplier_contact . Include supplier_id,supplier_name,phone_no*
 
 ```
 CREATE TABLE SUPPLIER
@@ -41,14 +41,6 @@ Q1-1: add five results
 Q1-2: Display the details of the supplier who comes from Florida and their supplier id 500
 select * from supplier where REGION = 'Florida' AND SUPPLIER_ID = 500;
 
- 
-
-
-
-
-
-
-
 
 Q1-3 : Add phone number in the supplier table using DDL command
 ALTER TABLE supplier ADD (phone_number  number(10));
@@ -56,9 +48,6 @@ ALTER TABLE supplier ADD (phone_number  number(10));
  
 Q1-4: Delete the unused column in the supplier table 
 ALTER TABLE supplier DROP COLUMN PHONE_NUMBER;
-
-
- 
 
 Q1-5: drop supplier table
 Code: drop table supplier;
@@ -72,50 +61,25 @@ FROM supplier;
 
 ```
 
-2. Question:
+**2. Question:**
 
-Ecommerce site determines shipping cost based on the products ordered and membership. The valid rates are displayed in the following table:
+*Ecommerce site determines shipping cost based on the products ordered and membership. The valid rates are displayed in the following table:
 
   QUANTITY	REGULAR SHIPPING COST	MEMBERS SHIPPING COST 
-Up to 3	$ 8.00	$ 4.00
-4-6	$7.00	$ 3.50
-7-10	$10.00	$5.00
+> Up to 3	$ 8.00	$ 4.00
+>4-6	$7.00	$ 3.50
+>7-10	$10.00	$5.00
 >10	$15.00	$7.50
 
 1.	Create a flowchart to outline the processing steps in order to handle this calculation. 
-2.	Create a pl/sql block to complete the above task. Include variable that holds Y OR N to include membership status and a variable to denote the number of items purchased. Verify with different values 
+2.	Create a pl/sql block to complete the above task. Include variable that holds Y OR N to include membership status and a variable to denote the number of items purchased. Verify with different values* 
 
-```
+
 Q2-1: Create flow chart
 
+Q2-2 : Create a pl/sql block to complete the above task. Include variable that holds Y OR N to include membership status and a variable to denote the number of items purchased. Verify with different values *
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Q2-2 : Create a pl/sql block to complete the above task. Include variable that holds Y OR N to include membership status and a variable to denote the number of items purchased. Verify with different values 
-
-
+```
 DECLARE 
 MEMB_STAT CHAR(1):='N';
 NUM_ITEMS NUMBER(9):='16';
@@ -162,14 +126,15 @@ END;
 
 
 ```
-3 - Question:
-Run below script to create the table
+**3 - Question:**
+
+*Run below script to create the table
 DROP TABLE messages;
 CREATE TABLE messages (results NUMBER(3));
 
 a) Insert the numbers 1 through 10, excluding 6 and 8. 
 b) Commit before the end of the block. 
-c) Execute a SELECT statement to verify that your PL/SQL block worked. 
+c) Execute a SELECT statement to verify that your PL/SQL block worked.*
 
 ```
 Create  table 
