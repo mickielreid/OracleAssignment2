@@ -7,7 +7,7 @@ supplier_name varchar2(50) - >unique name
 contact_name varchar2(50)
 phone_no varchar2(10)- >unique name
 city varchar2(10) 
-Region –> should accept only  ('N', 'NW', 'NE', 'S', 'SE', 'SW', 'W', 'E')
+Region â€“> should accept only  ('N', 'NW', 'NE', 'S', 'SE', 'SW', 'W', 'E')
 
 1.	Insert 5 records
 2.	Display the details of the supplier who comes from Florida and their supplier id 500;
